@@ -1,0 +1,24 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Companies Custom Properties
+        table 
+            tr 
+                th Name 
+                th Balance
+                th Last Payment Day
+                th Last Year Turnover
+            each company in data
+                tr 
+                    td
+                        p #{company.properties.name} 
+                    td
+                        p #{company.properties.balance}
+                    td
+                        p #{company.properties.last_payment_day}
+                    td
+                        p #{company.properties.last_year_turnover}
