@@ -54,6 +54,7 @@ input[type="submit"] {
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 table, th, td {
