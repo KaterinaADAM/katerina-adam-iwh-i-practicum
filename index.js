@@ -64,28 +64,6 @@ app.post('/update-cobj', async (req, res) => {
 
 });
 
-//Update
-// app.get('/update-cobj-id', async (req, res) => {
-//     // http://localhost:3000/update?id=28655022323
-//     const object_id = req.query.id;
-
-//     const getCompany = `https://api.hubapi.com/crm/v3/objects/companies/${object_id}?properties=object_id,domain,name,balance,last_payment_day,last_year_turnover`;
-//     const headers = {
-//         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
-//         'Content-Type': 'application/json'
-//     };
-
-//     try {
-//         const response = await axios.get(getCompany, { headers });
-//         const data = response.data;
-
-//         // res.json(data);
-//         res.render('updates', {name: data.properties.name, balance: data.properties.balance});
-        
-//     } catch(err) {
-//         console.error(err);
-//     }
-// });
 
 // /** 
 // * * This is sample code to give you a reference for how you should structure your calls. 
